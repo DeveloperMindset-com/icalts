@@ -32,8 +32,16 @@
       ],
       "VEVENT": [
         {
-          "DTSTART;VALUE=DATE": "20120904",
-          "DTEND;VALUE=DATE": "20120905",
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20120904",
+            "VALUE": "DATE"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20120905",
+            "VALUE": "DATE"
+          },
           "DTSTAMP": "20120905T084734Z",
           "UID": "redgrb1l0aju5edm6h0s102eu4@google.com",
           "CREATED": "20120905T084734Z",
@@ -50,7 +58,11 @@
               "DESCRIPTION": "This is an event reminder",
               "SUMMARY": "Alarm notification",
               "ATTENDEE": "mailto:calmozilla1@gmail.com",
-              "TRIGGER;VALUE=DATE-TIME": "20120903T233000Z"
+              "TRIGGER": {
+                "key": "TRIGGER",
+                "__value__": "20120903T233000Z",
+                "VALUE": "DATE-TIME"
+              }
             },
             {
               "ACTION": "DISPLAY",

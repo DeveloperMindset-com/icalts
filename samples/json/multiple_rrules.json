@@ -32,10 +32,30 @@
           "RRULE": "FREQ=MONTHLY;BYDAY=SU;UNTIL=20120730T065959Z",
           "SUMMARY": "sahaja <> frashed",
           "DESCRIPTION": "weekly 1on1",
-          "ATTENDEE;CN=James Lal;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE": "mailto:jlal@mozilla.com",
-          "ORGANIZER;CN=Faramarz Rashed": "mailto:frashed@mozilla.com",
-          "DTSTART;TZID=America/Los_Angeles": "20120326T110000",
-          "DTEND;TZID=America/Los_Angeles": "20120326T113000",
+          "ATTENDEE": {
+            "key": "ATTENDEE",
+            "__value__": "mailto:jlal@mozilla.com",
+            "CN": "James Lal",
+            "CUTYPE": "INDIVIDUAL",
+            "ROLE": "REQ-PARTICIPANT",
+            "PARTSTAT": "NEEDS-ACTION",
+            "RSVP": "TRUE"
+          },
+          "ORGANIZER": {
+            "key": "ORGANIZER",
+            "__value__": "mailto:frashed@mozilla.com",
+            "CN": "Faramarz Rashed"
+          },
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20120326T110000",
+            "TZID": "America/Los_Angeles"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20120326T113000",
+            "TZID": "America/Los_Angeles"
+          },
           "STATUS": "CONFIRMED",
           "CLASS": "PUBLIC",
           "TRANSP": "OPAQUE",
@@ -45,7 +65,11 @@
           "VALARM": [
             {
               "ACTION": "DISPLAY",
-              "TRIGGER;RELATED=START": "-PT5M",
+              "TRIGGER": {
+                "key": "TRIGGER",
+                "__value__": "-PT5M",
+                "RELATED": "START"
+              },
               "DESCRIPTION": "Reminder"
             }
           ]

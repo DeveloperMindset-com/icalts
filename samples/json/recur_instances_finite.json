@@ -32,24 +32,50 @@
           "DESCRIPTION": "IAM FOO",
           "RRULE": "FREQ=MONTHLY;INTERVAL=1;BYDAY=1TU;UNTIL=20121231T100000",
           "SUMMARY": "Crazy Event Thingy!",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=SahajaLal;X-NUM-GUESTS=0": "mailto:calmozilla1@gmail.com",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=james@lightsofapollo.com;X-NUM-GUESTS=0": "mailto:james@lightsofapollo.com",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=iam.revelation@gmail.com;X-NUM-GUESTS=0": "mailto:iam.revelation@gmail.com",
+          "ATTENDEE": {
+            "key": "ATTENDEE",
+            "__value__": "mailto:iam.revelation@gmail.com",
+            "CUTYPE": "INDIVIDUAL",
+            "ROLE": "REQ-PARTICIPANT",
+            "PARTSTAT": "NEEDS-ACTION",
+            "CN": "iam.revelation@gmail.com",
+            "X-NUM-GUESTS": "0"
+          },
           "LOCATION": "PLACE",
-          "ORGANIZER;CN=James Lal": "mailto:jlal@mozilla.com",
-          "DTSTART;TZID=America/Los_Angeles": "20121002T100000",
-          "DTEND;TZID=America/Los_Angeles": "20121002T103000",
+          "ORGANIZER": {
+            "key": "ORGANIZER",
+            "__value__": "mailto:jlal@mozilla.com",
+            "CN": "James Lal"
+          },
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20121002T100000",
+            "TZID": "America/Los_Angeles"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20121002T103000",
+            "TZID": "America/Los_Angeles"
+          },
           "STATUS": "CONFIRMED",
           "CLASS": "PUBLIC",
           "TRANSP": "OPAQUE",
           "LAST-MODIFIED": "20120912T171506Z",
           "DTSTAMP": "20120912T171506Z",
           "SEQUENCE": "0",
-          "RDATE;TZID=America/Los_Angeles": "20121105T100000",
+          "RDATE": {
+            "key": "RDATE",
+            "__value__": "20121105T100000",
+            "TZID": "America/Los_Angeles"
+          },
           "VALARM": [
             {
               "ACTION": "DISPLAY",
-              "TRIGGER;RELATED=START": "-PT5M",
+              "TRIGGER": {
+                "key": "TRIGGER",
+                "__value__": "-PT5M",
+                "RELATED": "START"
+              },
               "DESCRIPTION": "Reminder"
             }
           ]

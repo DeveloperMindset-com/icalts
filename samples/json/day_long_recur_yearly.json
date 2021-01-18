@@ -32,8 +32,16 @@
       ],
       "VEVENT": [
         {
-          "DTSTART;VALUE=DATE": "20120803",
-          "DTEND;VALUE=DATE": "20120804",
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20120803",
+            "VALUE": "DATE"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20120804",
+            "VALUE": "DATE"
+          },
           "RRULE": "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR",
           "DTSTAMP": "20120803T221306Z",
           "UID": "4pfh824gvims850j0gar361t04@google.com",
@@ -51,12 +59,20 @@
               "DESCRIPTION": "This is an event reminder",
               "SUMMARY": "Alarm notification",
               "ATTENDEE": "mailto:calmozilla1@gmail.com",
-              "TRIGGER;VALUE=DATE-TIME": "20120802T233000Z"
+              "TRIGGER": {
+                "key": "TRIGGER",
+                "__value__": "20120802T233000Z",
+                "VALUE": "DATE-TIME"
+              }
             },
             {
               "ACTION": "DISPLAY",
               "DESCRIPTION": "This is an event reminder",
-              "TRIGGER;VALUE=DATE-TIME": "20120802T233000Z"
+              "TRIGGER": {
+                "key": "TRIGGER",
+                "__value__": "20120802T233000Z",
+                "VALUE": "DATE-TIME"
+              }
             }
           ]
         }

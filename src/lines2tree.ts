@@ -1,19 +1,17 @@
 import {
     COLON,
+    EQUAL,
+    SPACE,
+    SEMICOLON,
+
     BEGIN,
     END,
 
-    ComponentType,
-    SPACE,
-    // SPACE
+    ComponentType
 } from './constants'
 
-export type KeyValue = {
-    [key:string]: KeyValue[] | TreeType | string
-}
-
 export type TreeType = {
-    [key:string]: KeyValue[] | TreeType | string
+    [key:string]: TreeType[] | TreeType | string
 }
 
 /**
@@ -136,6 +134,12 @@ export const lines2tree = (rawLines:string[]):TreeType => {
     return process(lines)
 }
 
+/**
+ * Returns a JSON tree based on ICS format
+ * 
+ * @param lines raw lines preprocessed for multi content lines
+ * @param intend optional, used for debugging tree data
+ */
 const process = (lines:string[], intend:number = 0):TreeType => {
     const output:TreeType = {}
     let componentName:ComponentType
@@ -160,16 +164,52 @@ const process = (lines:string[], intend:number = 0):TreeType => {
                 if(!output[componentName])
                     output[componentName] = []
 
-                const array:KeyValue[] = output[componentName] as any
+                const array:TreeType[] = output[componentName] as any
                 array.push(tree)
                 output[componentName] = array
 
                 i = lastIndex
             }
         }else if(line && !line.startsWith(END)){
-            output[key] = value
+            const kv = processKeyValue(key, value)
+            
+            if(kv){
+                const k = kv.key
+                output[k] = kv
+            }else{
+                output[key] = value
+            }
+            
         }
     }
 
     return output
+}
+
+export type KeyValue = {
+    key:string;
+    __value__:any;
+    [key:string]:string;
+}
+const processKeyValue = (key:string, value:string):KeyValue|null => {
+    if(key.includes(SEMICOLON)){
+        const keys = key.split(SEMICOLON)
+        const k = keys[0]
+        
+        let obj:KeyValue = {
+            key: k,
+            __value__: value
+        }
+
+        for(let i=1;i<keys.length;i++){
+            const kv = keys[i].split(EQUAL)
+            const k = kv[0]
+            const v = kv[1]
+            obj[k] = v
+        }
+
+        return obj
+    }
+
+    return null
 }

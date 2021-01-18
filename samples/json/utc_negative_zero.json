@@ -20,9 +20,21 @@
         {
           "UID": "d118e997-3683-4552-8fe8-57c641f1f179",
           "SUMMARY": "And another",
-          "ORGANIZER;CN=Sahaja Lal": "mailto:calmozilla1@yahoo.com",
-          "DTSTART;TZID=Etc/GMT": "20120821T210000",
-          "DTEND;TZID=Etc/GMT": "20120821T213000",
+          "ORGANIZER": {
+            "key": "ORGANIZER",
+            "__value__": "mailto:calmozilla1@yahoo.com",
+            "CN": "Sahaja Lal"
+          },
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20120821T210000",
+            "TZID": "Etc/GMT"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20120821T213000",
+            "TZID": "Etc/GMT"
+          },
           "STATUS": "CONFIRMED",
           "CLASS": "PUBLIC",
           "X-MICROSOFT-CDO-INTENDEDSTATUS": "BUSY",

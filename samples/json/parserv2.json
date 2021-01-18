@@ -32,11 +32,29 @@
           "RRULE": "FREQ=DAILY;BYDAY=MO,TU,WE,TH,FR",
           "SUMMARY": "Calendar",
           "DESCRIPTION": "desc",
-          "ATTENDEE;CN=XXX;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE": "mailto:foo@bar.com",
-          "ATTENDEE;CN=XXXX;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE": "mailto:x@bar.com",
-          "ORGANIZER;CN=foobar": "mailto:x@bar.com",
-          "DTSTART;TZID=America/Los_Angeles": "20120911T103000",
-          "DTEND;TZID=America/Los_Angeles": "20120911T110000",
+          "ATTENDEE": {
+            "key": "ATTENDEE",
+            "__value__": "mailto:x@bar.com",
+            "CN": "XXXX",
+            "ROLE": "REQ-PARTICIPANT",
+            "PARTSTAT": "ACCEPTED",
+            "RSVP": "TRUE"
+          },
+          "ORGANIZER": {
+            "key": "ORGANIZER",
+            "__value__": "mailto:x@bar.com",
+            "CN": "foobar"
+          },
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20120911T103000",
+            "TZID": "America/Los_Angeles"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20120911T110000",
+            "TZID": "America/Los_Angeles"
+          },
           "STATUS": "CONFIRMED",
           "CLASS": "PUBLIC",
           "TRANSP": "OPAQUE",
@@ -46,7 +64,11 @@
           "VALARM": [
             {
               "ACTION": "DISPLAY",
-              "TRIGGER;RELATED=START": "-PT5M",
+              "TRIGGER": {
+                "key": "TRIGGER",
+                "__value__": "-PT5M",
+                "RELATED": "START"
+              },
               "DESCRIPTION": "Reminder"
             }
           ]

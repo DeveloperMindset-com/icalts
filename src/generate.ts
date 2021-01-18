@@ -33,6 +33,6 @@ files.map( filename => {
 
         fs.writeFileSync(filenameJSON, json)
 
-        console.log(`'${f}',`)
+        // console.log(`'${f}',`)
     }
 })

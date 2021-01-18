@@ -9,13 +9,29 @@
       "X-WR-CALDESC": "Your contacts' birthdays and anniversaries",
       "VEVENT": [
         {
-          "DTSTART;VALUE=DATE": "20141210",
-          "DTEND;VALUE=DATE": "20141211",
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20141210",
+            "VALUE": "DATE"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20141211",
+            "VALUE": "DATE"
+          },
           "RRULE": "FREQ=DAILY;INTERVAL=1;COUNT=1",
           "RDATE": "20121210Z",
           "DTSTAMP": "20121207T183041Z",
           "UID": "2014_BIRTHDAY_79d389868f96182e@google.com",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Contacts;X-NUM-GUESTS=0": "mailto:4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg@virtual",
+          "ATTENDEE": {
+            "key": "ATTENDEE",
+            "__value__": "mailto:4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg@virtual",
+            "CUTYPE": "INDIVIDUAL",
+            "ROLE": "REQ-PARTICIPANT",
+            "PARTSTAT": "ACCEPTED",
+            "CN": "Contacts",
+            "X-NUM-GUESTS": "0"
+          },
           "CLASS": "PUBLIC",
           "CREATED": "20121207T183041Z",
           "LAST-MODIFIED": "20121207T183041Z",
@@ -25,14 +41,34 @@
           "TRANSP": "OPAQUE"
         },
         {
-          "DTSTART;VALUE=DATE": "20121210",
-          "DTEND;VALUE=DATE": "20121211",
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20121210",
+            "VALUE": "DATE"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20121211",
+            "VALUE": "DATE"
+          },
           "DTSTAMP": "20121207T183041Z",
           "UID": "BIRTHDAY_79d389868f96182e@google.com",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Contacts;X-NUM-GUESTS=0": "mailto:4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg@virtual",
+          "ATTENDEE": {
+            "key": "ATTENDEE",
+            "__value__": "mailto:4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg@virtual",
+            "CUTYPE": "INDIVIDUAL",
+            "ROLE": "REQ-PARTICIPANT",
+            "PARTSTAT": "ACCEPTED",
+            "CN": "Contacts",
+            "X-NUM-GUESTS": "0"
+          },
           "X-GOOGLE-CALENDAR-CONTENT-ICON": "https://calendar.google.com/googlecalendar/images/cake.gif",
           "X-GOOGLE-CALENDAR-CONTENT-DISPLAY": "chip",
-          "RECURRENCE-ID;VALUE=DATE": "20121210",
+          "RECURRENCE-ID": {
+            "key": "RECURRENCE-ID",
+            "__value__": "20121210",
+            "VALUE": "DATE"
+          },
           "CLASS": "PUBLIC",
           "CREATED": "20121207T183041Z",
           "DESCRIPTION": "Today is PErson #2's birthday!",
@@ -43,14 +79,34 @@
           "TRANSP": "OPAQUE"
         },
         {
-          "DTSTART;VALUE=DATE": "20131210",
-          "DTEND;VALUE=DATE": "20131211",
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20131210",
+            "VALUE": "DATE"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20131211",
+            "VALUE": "DATE"
+          },
           "DTSTAMP": "20121207T183041Z",
           "UID": "BIRTHDAY_79d389868f96182e@google.com",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Contacts;X-NUM-GUESTS=0": "mailto:4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg@virtual",
+          "ATTENDEE": {
+            "key": "ATTENDEE",
+            "__value__": "mailto:4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg@virtual",
+            "CUTYPE": "INDIVIDUAL",
+            "ROLE": "REQ-PARTICIPANT",
+            "PARTSTAT": "ACCEPTED",
+            "CN": "Contacts",
+            "X-NUM-GUESTS": "0"
+          },
           "X-GOOGLE-CALENDAR-CONTENT-ICON": "https://calendar.google.com/googlecalendar/images/cake.gif",
           "X-GOOGLE-CALENDAR-CONTENT-DISPLAY": "chip",
-          "RECURRENCE-ID;VALUE=DATE": "20131210",
+          "RECURRENCE-ID": {
+            "key": "RECURRENCE-ID",
+            "__value__": "20131210",
+            "VALUE": "DATE"
+          },
           "CLASS": "PUBLIC",
           "CREATED": "20121207T183041Z",
           "DESCRIPTION": "Today is PErson #2's birthday!",
@@ -61,14 +117,34 @@
           "TRANSP": "OPAQUE"
         },
         {
-          "DTSTART;VALUE=DATE": "20141210",
-          "DTEND;VALUE=DATE": "20141211",
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20141210",
+            "VALUE": "DATE"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20141211",
+            "VALUE": "DATE"
+          },
           "DTSTAMP": "20121207T183041Z",
           "UID": "BIRTHDAY_79d389868f96182e@google.com",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Contacts;X-NUM-GUESTS=0": "mailto:4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg@virtual",
+          "ATTENDEE": {
+            "key": "ATTENDEE",
+            "__value__": "mailto:4dhmurjkc5hn8sq0ctp6utbg5pr2sor1dhimsp31e8n6errfctm6abj3dtmg@virtual",
+            "CUTYPE": "INDIVIDUAL",
+            "ROLE": "REQ-PARTICIPANT",
+            "PARTSTAT": "ACCEPTED",
+            "CN": "Contacts",
+            "X-NUM-GUESTS": "0"
+          },
           "X-GOOGLE-CALENDAR-CONTENT-ICON": "https://calendar.google.com/googlecalendar/images/cake.gif",
           "X-GOOGLE-CALENDAR-CONTENT-DISPLAY": "chip",
-          "RECURRENCE-ID;VALUE=DATE": "20141210",
+          "RECURRENCE-ID": {
+            "key": "RECURRENCE-ID",
+            "__value__": "20141210",
+            "VALUE": "DATE"
+          },
           "CLASS": "PUBLIC",
           "CREATED": "20121207T183041Z",
           "DESCRIPTION": "Today is PErson #2's birthday!",

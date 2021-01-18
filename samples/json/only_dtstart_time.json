@@ -32,7 +32,11 @@
       ],
       "VEVENT": [
         {
-          "DTSTART;TZID=America/Los_Angeles": "20120630T060000",
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20120630T060000",
+            "TZID": "America/Los_Angeles"
+          },
           "DTSTAMP": "20120724T212411Z",
           "UID": "dn4vrfmfn5p05roahsopg57h48@example.com",
           "CREATED": "20120724T212411Z",

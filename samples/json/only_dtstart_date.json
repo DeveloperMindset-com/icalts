@@ -32,7 +32,11 @@
       ],
       "VEVENT": [
         {
-          "DTSTART;VALUE=DATE": "20120630",
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20120630",
+            "VALUE": "DATE"
+          },
           "DTSTAMP": "20120724T212411Z",
           "UID": "dn4vrfmfn5p05roahsopg57h48@example.com",
           "CREATED": "20120724T212411Z",

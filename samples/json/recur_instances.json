@@ -35,25 +35,55 @@
           "DESCRIPTION": "IAM FOO",
           "RRULE": "FREQ=MONTHLY;INTERVAL=1;BYDAY=1TU",
           "SUMMARY": "Crazy Event Thingy!",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=SahajaLal;X-NUM-GUESTS=0": "mailto:calmozilla1@gmail.com",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=james@lightsofapollo.com;X-NUM-GUESTS=0": "mailto:james@lightsofapollo.com",
-          "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=iam.revelation@gmail.com;X-NUM-GUESTS=0": "mailto:iam.revelation@gmail.com",
+          "ATTENDEE": {
+            "key": "ATTENDEE",
+            "__value__": "mailto:iam.revelation@gmail.com",
+            "CUTYPE": "INDIVIDUAL",
+            "ROLE": "REQ-PARTICIPANT",
+            "PARTSTAT": "NEEDS-ACTION",
+            "CN": "iam.revelation@gmail.com",
+            "X-NUM-GUESTS": "0"
+          },
           "LOCATION": "PLACE",
-          "ORGANIZER;CN=James Lal": "mailto:jlal@mozilla.com",
-          "DTSTART;TZID=America/Los_Angeles": "20121002T100000",
-          "DTEND;TZID=America/Los_Angeles": "20121002T103000",
+          "ORGANIZER": {
+            "key": "ORGANIZER",
+            "__value__": "mailto:jlal@mozilla.com",
+            "CN": "James Lal"
+          },
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20121002T100000",
+            "TZID": "America/Los_Angeles"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20121002T103000",
+            "TZID": "America/Los_Angeles"
+          },
           "STATUS": "CONFIRMED",
           "CLASS": "PUBLIC",
           "TRANSP": "OPAQUE",
           "LAST-MODIFIED": "20120912T171506Z",
           "DTSTAMP": "20120912T171506Z",
           "SEQUENCE": "0",
-          "RDATE;TZID=America/Los_Angeles": "20121110T100000,20121130T100000",
-          "EXDATE;TZID=America/Los_Angeles": "20130205T100000",
+          "RDATE": {
+            "key": "RDATE",
+            "__value__": "20121110T100000,20121130T100000",
+            "TZID": "America/Los_Angeles"
+          },
+          "EXDATE": {
+            "key": "EXDATE",
+            "__value__": "20130205T100000",
+            "TZID": "America/Los_Angeles"
+          },
           "VALARM": [
             {
               "ACTION": "DISPLAY",
-              "TRIGGER;RELATED=START": "-PT5M",
+              "TRIGGER": {
+                "key": "TRIGGER",
+                "__value__": "-PT5M",
+                "RELATED": "START"
+              },
               "DESCRIPTION": "Reminder"
             }
           ]
@@ -62,20 +92,40 @@
           "UID": "623c13c0-6c2b-45d6-a12b-c33ad61c4868",
           "SUMMARY": "Crazy Event Thingy!",
           "DESCRIPTION": "I HAZ CHANGED!",
-          "ORGANIZER;CN=James Lal": "mailto:jlal@mozilla.com",
-          "DTSTART;TZID=America/Los_Angeles": "20121002T150000",
-          "DTEND;TZID=America/Los_Angeles": "20121002T153000",
+          "ORGANIZER": {
+            "key": "ORGANIZER",
+            "__value__": "mailto:jlal@mozilla.com",
+            "CN": "James Lal"
+          },
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20121002T150000",
+            "TZID": "America/Los_Angeles"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20121002T153000",
+            "TZID": "America/Los_Angeles"
+          },
           "STATUS": "CONFIRMED",
           "CLASS": "PUBLIC",
           "TRANSP": "OPAQUE",
-          "RECURRENCE-ID;TZID=America/Los_Angeles": "20121002T100000",
+          "RECURRENCE-ID": {
+            "key": "RECURRENCE-ID",
+            "__value__": "20121002T100000",
+            "TZID": "America/Los_Angeles"
+          },
           "LAST-MODIFIED": "20120912T171540Z",
           "DTSTAMP": "20120912T171540Z",
           "SEQUENCE": "1",
           "VALARM": [
             {
               "ACTION": "DISPLAY",
-              "TRIGGER;RELATED=START": "-PT5M",
+              "TRIGGER": {
+                "key": "TRIGGER",
+                "__value__": "-PT5M",
+                "RELATED": "START"
+              },
               "DESCRIPTION": "Reminder"
             }
           ]
@@ -83,9 +133,21 @@
         {
           "UID": "623c13c0-6c2b-45d6-a12b-c33ad61c4868",
           "SUMMARY": "Crazy Event Thingy!",
-          "ORGANIZER;CN=James Lal": "mailto:jlal@mozilla.com",
-          "DTSTART;TZID=America/Los_Angeles": "20121106T200000",
-          "DTEND;TZID=America/Los_Angeles": "20121106T203000",
+          "ORGANIZER": {
+            "key": "ORGANIZER",
+            "__value__": "mailto:jlal@mozilla.com",
+            "CN": "James Lal"
+          },
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20121106T200000",
+            "TZID": "America/Los_Angeles"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20121106T203000",
+            "TZID": "America/Los_Angeles"
+          },
           "STATUS": "CONFIRMED",
           "CLASS": "PUBLIC",
           "TRANSP": "OPAQUE",
@@ -96,7 +158,11 @@
           "VALARM": [
             {
               "ACTION": "DISPLAY",
-              "TRIGGER;RELATED=START": "-PT5M",
+              "TRIGGER": {
+                "key": "TRIGGER",
+                "__value__": "-PT5M",
+                "RELATED": "START"
+              },
               "DESCRIPTION": "Reminder"
             }
           ]

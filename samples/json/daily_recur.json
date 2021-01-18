@@ -32,8 +32,16 @@
       ],
       "VEVENT": [
         {
-          "DTSTART;TZID=America/Los_Angeles": "20120801T050000",
-          "DTEND;TZID=America/Los_Angeles": "20120801T060000",
+          "DTSTART": {
+            "key": "DTSTART",
+            "__value__": "20120801T050000",
+            "TZID": "America/Los_Angeles"
+          },
+          "DTEND": {
+            "key": "DTEND",
+            "__value__": "20120801T060000",
+            "TZID": "America/Los_Angeles"
+          },
           "RRULE": "FREQ=DAILY",
           "DTSTAMP": "20120803T221236Z",
           "UID": "tgh9qho17b07pk2n2ji3gluans@google.com",
