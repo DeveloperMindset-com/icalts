@@ -1,7 +1,11 @@
 import {
     COLON,
     BEGIN,
-    END
+    END,
+
+    ComponentType,
+    SPACE,
+    // SPACE
 } from './constants'
 
 export type KeyValue = {
@@ -12,8 +16,31 @@ export type TreeType = {
     [key:string]: KeyValue[] | TreeType | string
 }
 
-export const lines2tree = (lines:string[]):TreeType => {
+// parsing content lines according to https://tools.ietf.org/html/rfc5545#section-3.1
+const preprocessing = (lines:string[]):string[] => {
+    let output:string[] = []
+
+    for(let i=0;i<lines.length;i++){
+        const line = lines[i]
+    
+        if(line.startsWith(SPACE)){
+            output[output.length-1] += line.trim()
+        }else if(line){
+            output.push(line)
+        }
+    }
+
+    return output
+}
+
+export const lines2tree = (rawLines:string[]):TreeType => {
+    const lines:string[] = preprocessing(rawLines)
+    return process(lines)
+}
+
+const process = (lines:string[], intend:number = 0):TreeType => {
     const output:TreeType = {}
+    let componentName:ComponentType
 
     for(let i=0;i<lines.length;i++){
         const line = lines[i]
@@ -23,13 +50,14 @@ export const lines2tree = (lines:string[]):TreeType => {
         const value = line.substr(index + 1)
 
         if(key === BEGIN){
-            const componentName = value // VCALENDAR, VTIMEZONE, VEVENT, VALARM
+            componentName = value as any
             const lastLine = [END, componentName].join(COLON)
-            const lastIndex = lines.indexOf(lastLine)
+            const lastIndex = lines.indexOf(lastLine, i)
 
             const newLines = lines.slice(i + 1, lastIndex)
+
             if(newLines.length){
-                const tree = lines2tree(newLines)
+                const tree = process(newLines, intend+1)
 
                 if(!output[componentName])
                     output[componentName] = []
@@ -40,7 +68,7 @@ export const lines2tree = (lines:string[]):TreeType => {
 
                 i = lastIndex
             }
-        }else if(line){
+        }else if(line && !line.startsWith(END)){
             output[key] = value
         }
     }

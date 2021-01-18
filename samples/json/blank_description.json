@@ -37,7 +37,7 @@
           "DTSTAMP": "20120724T212411Z",
           "UID": "dn4vrfmfn5p05roahsopg57h48@google.com",
           "CREATED": "20120724T212411Z",
-          "DESCRIPTION": "This is an event reminder",
+          "DESCRIPTION": "",
           "LAST-MODIFIED": "20120724T212411Z",
           "LOCATION": "",
           "SEQUENCE": "0",
@@ -51,11 +51,13 @@
               "SUMMARY": "Alarm notification",
               "ATTENDEE": "mailto:calmozilla1@gmail.com",
               "TRIGGER": "-P0DT0H30M0S"
+            },
+            {
+              "ACTION": "DISPLAY",
+              "DESCRIPTION": "This is an event reminder",
+              "TRIGGER": "-P0DT0H30M0S"
             }
-          ],
-          "ACTION": "DISPLAY",
-          "TRIGGER": "-P0DT0H30M0S",
-          "END": "VALARM"
+          ]
         }
       ]
     }
