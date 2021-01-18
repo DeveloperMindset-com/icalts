@@ -13,7 +13,7 @@ export type TreeType = {
 }
 
 export const lines2tree = (lines:string[]):TreeType => {
-    let output:TreeType = {}
+    const output:TreeType = {}
 
     for(let i=0;i<lines.length;i++){
         const line = lines[i]
@@ -23,21 +23,21 @@ export const lines2tree = (lines:string[]):TreeType => {
         const value = line.substr(index + 1)
 
         if(key === BEGIN){
-            const componentName = value //VCALENDAR, VTIMEZONE, VEVENT, VALARM
+            const componentName = value // VCALENDAR, VTIMEZONE, VEVENT, VALARM
             const lastLine = [END, componentName].join(COLON)
             const lastIndex = lines.indexOf(lastLine)
 
             const newLines = lines.slice(i + 1, lastIndex)
             if(newLines.length){
                 const tree = lines2tree(newLines)
-                
+
                 if(!output[componentName])
                     output[componentName] = []
 
-                let array:KeyValue[] = output[componentName] as any
+                const array:KeyValue[] = output[componentName] as any
                 array.push(tree)
                 output[componentName] = array
-                
+
                 i = lastIndex
             }
         }else if(line){
