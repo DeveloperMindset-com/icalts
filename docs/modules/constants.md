@@ -27,7 +27,7 @@
 
 Ƭ **ComponentType**: *VCALENDAR* \| *VTIMEZONE* \| *VEVENT* \| *VALARM*
 
-Defined in: [constants.ts:14](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L14)
+Defined in: [constants.ts:14](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L14)
 
 ## Variables
 
@@ -35,7 +35,7 @@ Defined in: [constants.ts:14](https://github.com/eugenehp/icalts/blob/270fa63/sr
 
 • `Const` **BEGIN**: *BEGIN*= 'BEGIN'
 
-Defined in: [constants.ts:6](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L6)
+Defined in: [constants.ts:6](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L6)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • `Const` **COLON**: *:*= ':'
 
-Defined in: [constants.ts:3](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L3)
+Defined in: [constants.ts:3](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L3)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • `Const` **END**: *END*= 'END'
 
-Defined in: [constants.ts:7](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L7)
+Defined in: [constants.ts:7](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L7)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • `Const` **NEW\_LINE**: *RegExp*
 
-Defined in: [constants.ts:1](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L1)
+Defined in: [constants.ts:1](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L1)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • `Const` **SEMICOLON**: *;*= ';'
 
-Defined in: [constants.ts:4](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L4)
+Defined in: [constants.ts:4](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L4)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • `Const` **SPACE**: * *= ' '
 
-Defined in: [constants.ts:2](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L2)
+Defined in: [constants.ts:2](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L2)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • `Const` **VALARM**: *VALARM*= 'VALARM'
 
-Defined in: [constants.ts:12](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L12)
+Defined in: [constants.ts:12](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L12)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • `Const` **VCALENDAR**: *VCALENDAR*= 'VCALENDAR'
 
-Defined in: [constants.ts:9](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L9)
+Defined in: [constants.ts:9](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L9)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 • `Const` **VEVENT**: *VEVENT*= 'VEVENT'
 
-Defined in: [constants.ts:11](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L11)
+Defined in: [constants.ts:11](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L11)
 
 ___
 
@@ -107,4 +107,4 @@ ___
 
 • `Const` **VTIMEZONE**: *VTIMEZONE*= 'VTIMEZONE'
 
-Defined in: [constants.ts:10](https://github.com/eugenehp/icalts/blob/270fa63/src/constants.ts#L10)
+Defined in: [constants.ts:10](https://github.com/eugenehp/icalts/blob/d408871/src/constants.ts#L10)
