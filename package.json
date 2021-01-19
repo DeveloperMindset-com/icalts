@@ -39,6 +39,6 @@
     "nyc": "^15.1.0",
     "ts-node-dev": "^1.1.1",
     "typedoc": "^0.20.16",
-    "typedoc-plugin-markdown": "^3.4.0"
+    "typedoc-plugin-markdown": "^3.4.1"
   }
 }
