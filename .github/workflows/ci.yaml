@@ -7,10 +7,11 @@ jobs:
       
       - name: Checkout
         uses: actions/checkout@v2
-        run: npm install
 
       - name: Test
-        run: npx jest
+        run: |
+          npm install
+          npx jest
 
       - name: Codecov
         uses: codecov/codecov-action@v1
