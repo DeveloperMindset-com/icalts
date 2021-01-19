@@ -9,10 +9,10 @@ import {
 
     ComponentType
 } from './constants'
-
-export type TreeType = {
-    [key:string]: TreeType[] | TreeType | string
-}
+import { 
+    KeyValue, 
+    TreeType 
+} from './types'
 
 /**
  * Parses content lines according to RFC5545 {@link https://tools.ietf.org/html/rfc5545#section-3.1}
@@ -186,11 +186,7 @@ const process = (lines:string[], intend:number = 0):TreeType => {
     return output
 }
 
-export type KeyValue = {
-    key:string;
-    __value__:any;
-    [key:string]:string;
-}
+
 const processKeyValue = (key:string, value:string):KeyValue|null => {
     if(key.includes(SEMICOLON)){
         const keys = key.split(SEMICOLON)
