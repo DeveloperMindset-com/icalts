@@ -2,6 +2,7 @@ ICALTS
 ============
 
 ![CI](https://github.com/eugenehp/icalts/workflows/CI/badge.svg?branch=main)
+[![codecov](https://codecov.io/gh/eugenehp/icalts/branch/main/graph/badge.svg?token=H8J3S5MAG2)](https://codecov.io/gh/eugenehp/icalts)
 
 
 [RFC5545](https://tools.ietf.org/html/rfc5545) implementation in pure TypeScript.
