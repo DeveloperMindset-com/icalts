@@ -29,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.21",
+    "@types/node": "^14.14.22",
     "ts-jest": "^26.4.4",
     "ts-node": "^9.1.1",
     "tslib": "^2.1.0",
@@ -42,6 +42,6 @@
     "nyc": "^15.1.0",
     "ts-node-dev": "^1.1.1",
     "typedoc": "^0.20.16",
-    "typedoc-plugin-markdown": "^3.4.0"
+    "typedoc-plugin-markdown": "^3.4.1"
   }
 }
