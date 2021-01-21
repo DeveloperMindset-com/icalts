@@ -2,14 +2,16 @@
   "name": "icalts",
   "version": "0.0.1",
   "description": "iCal parser written in pure typescript",
-  "main": "src/index.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "docs": "npx typedoc --plugin typedoc-plugin-markdown",
     "dev": "npx ts-node-dev src/index.ts",
     "tslint": "npx tslint -p tsconfig.json",
     "tslint-fix": "npx tslint --fix -p tsconfig.json",
     "test": "nyc jest",
-    "posttest": "nyc report --reporter=json"
+    "posttest": "nyc report --reporter=json",
+    "prepublish": "npm run test && npx tsc"
   },
   "keywords": [
     "ical",
