@@ -11,7 +11,8 @@
     "tslint-fix": "npx tslint --fix -p tsconfig.json",
     "test": "nyc jest",
     "posttest": "nyc report --reporter=json",
-    "prepublish": "npm run test && npx tsc"
+    "prepare": "npm run test",
+    "prepublishOnly": "npm run test && npx tsc"
   },
   "keywords": [
     "ical",
