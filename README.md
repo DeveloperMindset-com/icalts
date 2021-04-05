@@ -22,3 +22,13 @@ Inspired by [ical.js](https://github.com/mozilla-comm/ical.js#readme) and [ical2
 
 
 Thanks to [ical.js](https://github.com/mozilla-comm/ical.js/tree/master/samples) repository for samples of `ics` files.
+
+## Contributing
+
+See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+
+## License
+
+MIT
+
+Copyright (c) 2021 Eugene Hauptmann
