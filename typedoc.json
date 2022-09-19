@@ -2,8 +2,7 @@
     "entryPoints": ["src/"],
     "out": "docs",
     "exclude": [
-        "**/__tests__/**/*",
-        "./src/wip.ts"
+        "**/__tests__/**/*"
     ],
     "includes": "./"
   }

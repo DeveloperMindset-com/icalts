@@ -8,11 +8,11 @@ import {
     END,
 
     ComponentType
-} from './constants'
+} from './constants.js'
 import { 
     KeyValue, 
     TreeType 
-} from './types'
+} from './types.js'
 
 /**
  * Parses content lines according to RFC5545 {@link https://tools.ietf.org/html/rfc5545#section-3.1}
