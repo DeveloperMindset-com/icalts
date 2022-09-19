@@ -1,1 +1,1 @@
-export { lines2tree } from './lines2tree.js'
+export { lines2tree } from './lines2tree'
