@@ -1,8 +1,8 @@
 import fs from 'fs'
 import { NEW_LINE } from '../src/constants'
-import { lines2tree } from '../src/lines2tree'
+import { parseString } from '../src/parse'
 
-describe("lines2tree - transform file to a json tree", () => {
+describe("parseString - transform file to a json tree", () => {
     const filenames = [
         'blank_description',
         'blank_line_end',
@@ -26,7 +26,7 @@ describe("lines2tree - transform file to a json tree", () => {
             const file = fs.readFileSync(`./samples/ics/${filename}.ics`, 'utf-8')
             const json = fs.readFileSync(`./samples/json/${filename}.json`, 'utf-8')
             const lines = file.split(NEW_LINE)
-            const obj = lines2tree(lines)
+            const obj = parseString(lines)
     
             const generatesJSON = JSON.stringify(obj, null, 2)
             expect(generatesJSON).toEqual(json)

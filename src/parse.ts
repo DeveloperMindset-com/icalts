@@ -129,7 +129,7 @@ const preprocessing = (lines:string[]):string[] => {
  * 
  * @param rawLines input array of string from the ICS file
  */
-export const lines2tree = (rawLines:string[]):TreeType => {
+export const parseString = (rawLines:string[]):TreeType => {
     const lines:string[] = preprocessing(rawLines)
     return process(lines)
 }
