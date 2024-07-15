@@ -28,4 +28,4 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 [MIT](https://github.com/eugenehp/icalts/blob/main/LICENSE)
 
-Copyright (c) 2021-2023 Eugene Hauptmann
+Copyright (c) 2021-2024 Eugene Hauptmann
