@@ -28,10 +28,10 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^29.0.3",
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.0.8",
     "codecov": "^3.8.3",
-    "jest": "^29.7.0",
+    "jest": "^30.0.5",
     "nyc": "^17.0.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.1",
